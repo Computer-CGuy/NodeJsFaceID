@@ -22,11 +22,11 @@ def add(name,path):
 js = {}
 js["encodes"]=[]
 
-add("Yash","detectedYash.jpg")
-add("Obama","obama.jfif")
-add("Trump","trump.webp")
-add("Modi","modi.jpg")
+add("Yash","../Faces/detectedYash.jpg")
+add("Obama","../Faces/obama.jfif")
+add("Trump","../Faces/trump.webp")
+add("Modi","../Faces/modi.jpg")
 
 # print(js)
-with open('data.js', 'w') as outfile:
+with open('data.json', 'w') as outfile:
     json.dump(js, outfile)

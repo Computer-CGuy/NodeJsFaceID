@@ -5,10 +5,10 @@ import numpy as np
 import json
 
 
-with open('data.js', 'r') as outfile:
+with open('data.json', 'r') as outfile:
     js = json.load(outfile)
 
-face = cv2.imread("image.png")
+face = cv2.imread("../image.png")
 enc = face_recognition.face_encodings(face)
 
 if(len(enc)==0):
